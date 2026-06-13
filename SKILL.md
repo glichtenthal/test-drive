@@ -5,9 +5,9 @@ description: Use when the user has a plausible but untested idea, belief, thesis
 
 # Test Drive
 
-Test Drive helps people try an idea before they trust it.
+Test Drive helps people test an idea, claim, or decision before they trust it.
 
-The skill turns a plausible belief, decision, strategy, prompt, skill, message, artifact, or AI output into the smallest credible trial that can create useful evidence. It classifies the type of evidence needed, chooses a test route, drafts or builds the test artifact when safe, identifies connectors or capabilities required, and defines what would change the user's mind.
+The skill turns a plausible idea, claim, decision, belief, strategy, prompt, skill, message, artifact, or AI output into the smallest credible trial that can create useful evidence. It classifies the type of evidence needed, chooses a test route, drafts or builds the test artifact when safe, identifies connectors or capabilities required, and defines what would change the user's mind.
 
 The goal is not to prove the user right. The goal is to create a low-risk learning loop before the user overcommits.
 

@@ -4,7 +4,7 @@
 
 Try an idea before you trust it.
 
-Test Drive is an agent skill for Claude and Codex that turns a plausible idea, belief, strategy, decision, prompt, skill, message, or artifact into a low-risk trial that can create useful evidence.
+Test Drive is an agent skill for Claude and Codex that helps people test an idea, claim, or decision before trusting it. It turns plausible beliefs, strategies, prompts, skills, messages, artifacts, and AI outputs into low-risk trials that can create useful evidence.
 
 It helps people move from judgment to evidence-seeking action without overcommitting too early.
 
@@ -20,7 +20,7 @@ The point is not to prove the idea right. The point is to learn before committin
 
 Test Drive helps identify:
 
-- the belief, idea, claim, decision, or artifact being tested
+- the idea, claim, decision, belief, or artifact being tested
 - the evidence type that matters most
 - the smallest credible test
 - the artifact needed to run the test
@@ -98,7 +98,7 @@ Create the smallest useful test for this strategy.
 - **The Briefing Room** organizes messy context.
 - **Ground Truth** pressure-tests the thinking.
 - **The Quorum** deliberates consequential decisions.
-- **Test Drive** tries an idea before you trust it.
+- **Test Drive** tests an idea, claim, or decision before you trust it.
 
 Together they support a judgment workflow: make the mess legible, challenge the reasoning, deliberate the stakes, then create evidence.
 

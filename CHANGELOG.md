@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2
+
+- Clarifies functional positioning around testing ideas, claims, and decisions before trusting them.
+- Keeps "try an idea before you trust it" as the public tagline while making descriptions more precise.
+
 ## v1.1
 
 - Adds route-specific output patterns for each evidence type.
