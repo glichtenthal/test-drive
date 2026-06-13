@@ -1,0 +1,75 @@
+{
+  "skill_name": "test-drive",
+  "evals": [
+    {
+      "id": "positioning-judgment-infrastructure",
+      "prompt": "Use Test Drive on this: I think 'judgment infrastructure for human-led AI' is the right positioning for my agent skills catalog, but I don't want to overfit to language I personally like. How should I test whether this framing actually lands?",
+      "baseline_expected_failure": "Without the skill, an agent may give generic marketing advice, rewrite the positioning, or recommend posting more content without defining evidence type, signal quality, or what would change confidence.",
+      "expected_output": "Classifies the test as Human Reaction plus Artifact Performance, recommends a small message test or A/B post, drafts or outlines variants, defines resonance and failure signals, and suggests collecting responses for later synthesis.",
+      "files": [],
+      "assertions": [
+        "Names the belief being tested",
+        "Classifies Human Reaction as the primary evidence type",
+        "Recommends a small test rather than a broad campaign",
+        "Defines support, weaken, and mind-changing signals",
+        "Creates or recommends the artifact needed to run the test"
+      ]
+    },
+    {
+      "id": "onboarding-retention-analysis",
+      "prompt": "Use Test Drive on this claim: Customers who attend onboarding are more likely to retain. We have onboarding attendance, account size, plan type, acquisition channel, signup date, usage, and retention status in a spreadsheet. Should we run a regression?",
+      "baseline_expected_failure": "Without the skill, an agent may jump straight to regression or give vague analytics advice without clarifying unit of analysis, variables, controls, sample viability, connector needs, or simpler first-pass tests.",
+      "expected_output": "Classifies the test as Behavioral / Data, recommends descriptive and cohort analysis before regression, defines dataset variables and controls, names spreadsheet capability needs, and states regression caveats.",
+      "files": [],
+      "assertions": [
+        "Does not default immediately to regression",
+        "Identifies outcome, explanatory variables, controls, and unit of analysis",
+        "Mentions spreadsheet or data connector requirements",
+        "Defines interpretation caveats and what would change confidence",
+        "Provides a practical analysis route"
+      ]
+    },
+    {
+      "id": "skill-before-publishing",
+      "prompt": "Test drive this new skill before I publish it. It claims to help users turn messy personal and professional context into a structured brief, but I'm worried it might just summarize things and miss what makes it useful.",
+      "baseline_expected_failure": "Without the skill, an agent may compliment the skill, give superficial README edits, or critique in the abstract without creating realistic eval cases and pass/fail criteria.",
+      "expected_output": "Classifies the test as Artifact Performance plus Reasoning, creates realistic eval scenarios, defines pass/fail criteria, recommends Ground Truth for adversarial critique if useful, and identifies revisions before release.",
+      "files": [],
+      "assertions": [
+        "Classifies Artifact Performance as a primary evidence type",
+        "Produces realistic skill eval scenarios",
+        "Defines pass/fail criteria",
+        "Names likely failure modes",
+        "Recommends a next validation step before publishing"
+      ]
+    },
+    {
+      "id": "hiring-seniority-read",
+      "prompt": "Use Test Drive on this hiring read: Candidate A feels more senior and polished than Candidate B, but I worry I'm being influenced by confidence and storytelling. How can we test the actual judgment quality before deciding?",
+      "baseline_expected_failure": "Without the skill, an agent may give interview advice or compare candidates abstractly without designing a low-risk work-sample test and evidence criteria.",
+      "expected_output": "Classifies the test as Expert Judgment plus Artifact Performance, recommends a structured work-sample or scenario exercise, drafts the prompt or rubric, defines evaluation signals, and includes an approval gate before contacting candidates.",
+      "files": [],
+      "assertions": [
+        "Identifies the belief or bias being tested",
+        "Recommends a practical work-sample or scenario test",
+        "Creates or outlines a rubric",
+        "Separates confidence/polish from judgment quality",
+        "Includes an approval gate before external candidate action"
+      ]
+    },
+    {
+      "id": "strategy-market-shift",
+      "prompt": "Use Test Drive on this strategy: We think our team should shift focus from self-serve customers to enterprise buyers next quarter. Sales is excited, support says activation is still broken, and product says dashboards are close. What would be the smallest credible test before we reorganize around this?",
+      "baseline_expected_failure": "Without the skill, an agent may deliberate the strategy or choose a side without designing a small evidence loop and naming which evidence type should dominate.",
+      "expected_output": "Classifies likely Human Reaction, Behavioral / Data, and Expert Judgment needs, recommends a small combined test such as targeted customer interviews plus data review, identifies artifacts and connectors, and defines decision-changing signals.",
+      "files": [],
+      "assertions": [
+        "Does not immediately recommend the reorganization",
+        "Identifies multiple evidence types and chooses a primary route",
+        "Recommends a small test before a large commitment",
+        "Names artifacts such as interview guide, data request, or analysis prompt",
+        "Defines what evidence would support or weaken the shift"
+      ]
+    }
+  ]
+}
