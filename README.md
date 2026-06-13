@@ -2,7 +2,7 @@
 
 ![Test Drive social preview](assets/social-preview.svg)
 
-Try an idea before you trust it.
+Test an idea before you trust it.
 
 Test Drive is an agent skill for Claude and Codex that helps people test an idea, claim, or decision before trusting it. It turns plausible beliefs, strategies, prompts, skills, messages, artifacts, and AI outputs into low-risk trials that can create useful evidence.
 

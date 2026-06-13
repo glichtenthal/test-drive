@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3
+
+- Refines the social preview artwork to match the catalog card system.
+- Improves preview readability with consistent typography, safer text spacing, and a clearer evidence-testing graphic.
+- Updates the public tagline from "try an idea before you trust it" to "test an idea before you trust it."
+
 ## v1.2
 
 - Clarifies functional positioning around testing ideas, claims, and decisions before trusting them.
