@@ -61,6 +61,9 @@ Do not send, post, publish, buy, book, scrape private data, query sensitive syst
 **7. Define what would change the user's mind.**
 A test is weak if success and failure signals are vague. Make the learning criteria explicit before execution.
 
+**8. Dry-run before external action when risk is real.**
+If the test is public, sensitive, expensive, hard to undo, or involves other people, prefer a dry run, review artifact, or simulated pass before taking external action.
+
 ---
 
 ## Evidence Types
@@ -77,6 +80,96 @@ Classify the primary evidence type before designing the test. Add secondary evid
 | Operational Feasibility | whether the workflow, connector, process, or rollout can work | capability check, permission review, implementation spike, pilot workflow, manual fallback |
 
 If multiple evidence types apply, choose the one that would most change the user's next action.
+
+---
+
+## Test Routes By Evidence Type
+
+Use these route patterns to make the output concrete. Adapt them to the user's context, but do not skip the artifact, signal, and approval-gate pieces.
+
+### Human Reaction
+
+Use when the idea depends on what people understand, feel, want, remember, trust, choose, or reject.
+
+Default route:
+
+1. Name the audience segment.
+2. Draft the message, survey, interview guide, prototype brief, or feedback request.
+3. Define the response signal that would matter.
+4. Define the failure signal.
+5. Identify the channel or connector, plus manual fallback.
+
+Good artifacts: email, Slack post, LinkedIn post, interview guide, survey, landing-page outline, prototype feedback script.
+
+### Behavioral / Data
+
+Use when the idea depends on observed behavior or a dataset.
+
+Default route:
+
+1. State the analysis question.
+2. Define the unit of analysis.
+3. Name the outcome variable, explanatory variables, and controls.
+4. Pick the lightest credible method before regression.
+5. Identify the data source or connector.
+6. State caveats and what result would change confidence.
+
+Good artifacts: analysis plan, spreadsheet instructions, SQL sketch, notebook outline, data request, regression readiness checklist.
+
+### Reasoning
+
+Use when the idea depends on logic, assumptions, argument quality, or counterexamples.
+
+Default route:
+
+1. Name the core claim.
+2. Identify the assumption most worth attacking.
+3. Route to Ground Truth or draft an adversarial review prompt.
+4. Define what critique would require revision.
+
+Good artifacts: Ground Truth prompt, assumption audit, counterexample prompt, red-team review brief.
+
+### Expert Judgment
+
+Use when the idea has consequential trade-offs without a single obvious metric.
+
+Default route:
+
+1. State the decision or trade-off.
+2. Name the perspectives needed.
+3. Route to The Quorum when stakes justify it.
+4. Define what disagreement or pre-mortem finding would change the next step.
+
+Good artifacts: Quorum decision brief, scenario matrix, stakeholder lens review, pre-mortem prompt.
+
+### Artifact Performance
+
+Use when the thing itself needs to be tried before reuse or publication.
+
+Default route:
+
+1. Name the artifact and intended job.
+2. Create realistic eval cases or dry-run scenarios.
+3. Define pass/fail criteria.
+4. Run or propose the dry run.
+5. Recommend revisions before external use.
+
+Good artifacts: eval prompts, rubric, edge-case list, sample input set, before/after comparison.
+
+### Operational Feasibility
+
+Use when the question is whether a workflow, connector, data pull, integration, or process can actually work.
+
+Default route:
+
+1. Name the needed capability.
+2. Explain why it matters to the test.
+3. Specify minimum permission scope.
+4. Identify available and missing connectors.
+5. Provide a manual fallback or implementation request.
+6. Ask for approval before configuration or external action.
+
+Good artifacts: connector scope, implementation request, pilot checklist, manual fallback steps.
 
 ---
 

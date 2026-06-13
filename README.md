@@ -110,11 +110,17 @@ Together they support a judgment workflow: make the mess legible, challenge the 
 
 ## Build the `.skill` yourself
 
-The repo is the skill. Package it into an installable file with the skill creator tooling:
+The repo is the skill. To create a local installable `.skill` file, zip the folder from its parent directory while excluding evals and local machine files:
 
 ```bash
-python -m scripts.package_skill path/to/test-drive
+cd path/to/parent
+zip -r test-drive.skill test-drive \
+  -x 'test-drive/evals/*' \
+  -x '*/.DS_Store' \
+  -x '*/__pycache__/*'
 ```
+
+The official release asset is already packaged for install: [test-drive.skill](https://github.com/glichtenthal/test-drive/releases/latest).
 
 ## Repo layout
 
@@ -128,6 +134,10 @@ test-drive/
 ├── evals/
 │   └── evals.json
 ├── examples/
+│   ├── README.md
+│   ├── positioning-test.md
+│   ├── data-analysis-test.md
+│   └── skill-eval-test.md
 ├── README.md
 ├── CHANGELOG.md
 └── LICENSE

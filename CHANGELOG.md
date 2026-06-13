@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1
+
+- Adds route-specific output patterns for each evidence type.
+- Adds an explicit dry-run-before-risky-action rule.
+- Adds an examples index and fixes local packaging instructions.
+
 ## v1.0
 
 - Initial release of Test Drive.
