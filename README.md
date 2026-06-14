@@ -93,6 +93,14 @@ What data or connector would we need to validate this claim?
 Create the smallest useful test for this strategy.
 ```
 
+## Try it in three minutes
+
+Start with the worked quick demo:
+
+- [Quick demo: design a small test for an onboarding complexity claim](examples/quick-demo.md)
+
+It shows a realistic idea, a copy-paste prompt, the expected evidence-plan shape, and the artifact the agent can prepare next.
+
 ## How it fits with other skills
 
 - **The Briefing Room** organizes messy context.

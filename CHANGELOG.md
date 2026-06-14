@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.4
+
+- Adds a quick-demo example with realistic input, copy-paste prompt, representative evidence-plan shape, and next-step artifact guidance.
+- Updates the examples index and README adoption path so new users can try the skill in three minutes.
+
 ## v1.3
 
 - Refines the social preview artwork to match the catalog card system.

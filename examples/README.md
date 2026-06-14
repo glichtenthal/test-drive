@@ -6,6 +6,7 @@ These examples show how Test Drive stays horizontal by routing the same core que
 
 ## Examples
 
+- [Quick Demo](quick-demo.md) - the fastest way to see Test Drive turn a plausible claim into a small evidence plan.
 - [Positioning Test](positioning-test.md) - human reaction and artifact performance evidence for a message before publishing.
 - [Data Analysis Test](data-analysis-test.md) - behavioral/data evidence for a retention claim before jumping to regression.
 - [Skill Evaluation Test](skill-eval-test.md) - artifact performance and reasoning evidence for a skill before release.
