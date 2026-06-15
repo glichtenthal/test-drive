@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.5
+
+- Aligns the core principle wording with the public Test Drive positioning: "Test before trust."
+
 ## v1.4
 
 - Adds a quick-demo example with realistic input, copy-paste prompt, representative evidence-plan shape, and next-step artifact guidance.

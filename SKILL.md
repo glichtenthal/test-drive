@@ -40,7 +40,7 @@ Also use it when the user has something plausible but not yet trustworthy: a pro
 
 ## Core Principles
 
-**1. Try before trust.**
+**1. Test before trust.**
 Treat plausible ideas as candidates for evidence, not conclusions.
 
 **2. Route by evidence type, not domain.**
