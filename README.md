@@ -49,7 +49,7 @@ Download `test-drive.skill` from the [latest release](../../releases), then add 
 Ask Codex:
 
 ```text
-Install my Test Drive skill from https://github.com/glichtenthal/test-drive
+Install my Test Drive skill from https://github.com/glichtenthal/test-drive into ~/.agents/skills
 ```
 
 Or install manually:
@@ -58,8 +58,16 @@ Or install manually:
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo glichtenthal/test-drive \
   --path . \
-  --name test-drive
+  --name test-drive \
+  --dest ~/.agents/skills
 ```
+
+Codex 0.95.0 and newer loads user skills from `~/.agents/skills`. For Codex
+0.94.x and older, install the complete folder at `~/.codex/skills/test-drive`
+instead.
+
+Do not install the skill in both locations. Duplicate-name skills can fail
+silently when invoked by bare name.
 
 Restart Codex after installation.
 
@@ -68,7 +76,7 @@ Restart Codex after installation.
 The repository is the skill. Copy the complete folder into your agent's skills directory. For example, Codex discovers:
 
 ```text
-~/.codex/skills/test-drive/SKILL.md
+~/.agents/skills/test-drive/SKILL.md
 ```
 
 ## Good first uses

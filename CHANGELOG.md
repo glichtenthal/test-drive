@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.6
+
+- Updates install instructions for the current user-skill location, with a compatibility note for older Codex versions.
+
 ## v1.5
 
 - Aligns the core principle wording with the public Test Drive positioning: "Test before trust."
