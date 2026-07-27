@@ -49,7 +49,7 @@ Download `test-drive.skill` from the [latest release](../../releases), then add 
 Ask Codex:
 
 ```text
-Install my Test Drive skill from https://github.com/glichtenthal/test-drive into ~/.agents/skills
+Install Test Drive v1.6 into ~/.agents/skills
 ```
 
 Or install manually:
@@ -58,8 +58,16 @@ Or install manually:
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo glichtenthal/test-drive \
   --path . \
+  --ref v1.6 \
+  --method download \
   --name test-drive \
   --dest ~/.agents/skills
+```
+
+Already installed? The installer will not overwrite an existing copy. Move it first:
+
+```bash
+mv ~/.agents/skills/test-drive ~/.agents/test-drive-backup-$(date +%Y%m%d-%H%M%S)
 ```
 
 Codex 0.95.0 and newer loads user skills from `~/.agents/skills`. For Codex
